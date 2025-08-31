@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* src/index.css */
+@import "tailwindcss";
+
+/* 可选：你的自定义样式 */
+:root { color-scheme: light; }
