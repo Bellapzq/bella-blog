@@ -105,6 +105,28 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* About Bella Section */}
+      <section className="grid grid-cols-12 gap-8 items-center my-16">
+        {/* 左边文字 */}
+        <div className="col-span-12 md:col-span-5 text-gray-700 leading-relaxed space-y-4">
+          <h2 className="text-3xl font-bold mb-4">About Bella</h2>
+          <p>
+            Hi, I’m Bella 👋 Born and raised in Guangdong, China, I’m now enjoying life in sunny Sydney. 
+            In December 2024, I graduated from UNSW with a Master’s in Information Technology. 
+            Beyond my love for tech, I’m someone who finds joy in creativity—whether it’s sketching trip plans, 
+            experimenting in the kitchen, or curating little details that make life warm and colorful.
+          </p>
+        </div>
+
+        {/* 右边照片 */}
+        <div className="col-span-12 md:col-span-5 flex justify-end">
+          <img
+            src="/About/Personal_3.JPG"
+            alt="Bella"
+            className="w-50 h-auto rounded-lg shadow-md object-cover"
+          />
+        </div>
+      </section>
     </main>
   );
 }
