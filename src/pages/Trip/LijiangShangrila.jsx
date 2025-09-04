@@ -62,9 +62,8 @@ export default function LijiangShangrila() {
 
       {/* 封面图 */}
       <figure className="mt-8">
-        {/* 按你实际路径放置图片；这里示例 public/posts/lijiang/Jade_Dragon_Mountain.jpg */}
         <img
-          src="/public/Yunnan/Jade_Dragon_Mountain.jpg"
+          src="/Yunnan/JadeDragonMountain.jpg"
           alt="Jade Dragon Mountain"
           className="w-full h-auto rounded"
         />

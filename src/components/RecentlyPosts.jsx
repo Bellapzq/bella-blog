@@ -18,9 +18,9 @@ export default function RecentlyPosts() {
                 {/* 1) 类别（TRIP/TASTY） */}
                 <div className="flex items-center justify-center md:justify-start">
                 {p.category?.toLowerCase() === "trip" ? (
-                    <img src="/Public/Title_trip.jpg" alt="Trip" className="w-20 h-auto object-contain" />
+                    <img src="Title_Trip.jpg" alt="Trip" className="w-20 h-auto object-contain" />
                 ) : (
-                    <img src="/Public/Title_tasty.jpg" alt="Tasty" className="w-20 h-auto object-contain" />
+                    <img src="Title_Tasty.jpg" alt="Tasty" className="w-20 h-auto object-contain" />
                 )}
                 </div>
 

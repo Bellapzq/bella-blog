@@ -117,7 +117,7 @@ export default function Home() {
         <div className="col-span-12 md:col-span-5 text-gray-700 leading-relaxed space-y-4">
           {/* 用图片替换 h2 */}
           <img
-            src="/Public/Title_AboutBella.jpg"   // 这里放你的那张粉色标题图片路径
+            src="Title_AboutBella.jpg"   // 这里放你的那张粉色标题图片路径
             alt="About Bella"
             className="w-64 h-auto mb-4 mx-auto md:mx-0"
           />
