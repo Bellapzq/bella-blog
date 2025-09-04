@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 import RecentlyPosts from "../components/RecentlyPosts";
-
+import PreviewSection from "../components/PreviewSection";
 
 
 export default function Home() {
@@ -153,6 +153,11 @@ export default function Home() {
 
       {/* Recently Post */}
       <RecentlyPosts />
+
+      {/* 间隔 */}
+      <div className="h-[50px] bg-white"></div>
+
+      <PreviewSection />
 
       {/* 间隔 */}
       <div className="h-[50px] bg-white"></div>

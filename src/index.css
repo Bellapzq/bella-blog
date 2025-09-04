@@ -38,3 +38,12 @@
 .animate-marquee {
   animation: marquee 18s linear infinite;
 }
+
+@keyframes marquee-soon {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-marquee-soon {
+  animation: marquee-soon 12s linear infinite;
+}
