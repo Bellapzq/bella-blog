@@ -23,7 +23,7 @@ export default function Navbar() {
 
         {/* 右侧社媒图标 */}
         <div className="flex items-center gap-3">
-          <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/zhiqing-pang-079765307/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
             <img src="/linkedin-svgrepo-com.svg" alt="" className="h-5 w-5" />
           </a>
         </div>

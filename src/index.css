@@ -7,3 +7,34 @@
 
 /* 可选：你的自定义样式 */
 :root { color-scheme: light; }
+.stroke-effect {
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  transition: stroke-dashoffset 0.7s ease-out;
+}
+
+/* 让 path 从左到右绘制 */
+.scribble {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;             /* 初始完全未绘制 */
+  transition: stroke-dashoffset 650ms ease-out;
+}
+
+/* 第二条稍有延迟，显得更像手划两笔 */
+.scribble-delay {
+  transition-delay: 120ms;
+}
+
+/* 悬停整块时触发 */
+.group:hover .scribble {
+  stroke-dashoffset: 0;
+}
+
+/* marquee 滚动 */
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 18s linear infinite;
+}

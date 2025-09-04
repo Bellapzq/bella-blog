@@ -1,5 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
+import RecentlyPosts from "../components/RecentlyPosts";
+
 
 
 export default function Home() {
@@ -105,11 +107,20 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* 间隔 */}
+      <div className="h-[30px] bg-white"></div>
+
       {/* About Bella Section */}
       <section className="grid grid-cols-12 gap-8 items-center my-16">
         {/* 左边文字 */}
         <div className="col-span-12 md:col-span-5 text-gray-700 leading-relaxed space-y-4">
-          <h2 className="text-3xl font-bold mb-4">About Bella</h2>
+          {/* 用图片替换 h2 */}
+          <img
+            src="/Public/Title_AboutBella.jpg"   // 这里放你的那张粉色标题图片路径
+            alt="About Bella"
+            className="w-64 h-auto mb-4 mx-auto md:mx-0"
+          />
           <p>
             Hi, I’m Bella 👋 Born and raised in Guangdong, China, I’m now enjoying life in sunny Sydney. 
             In December 2024, I graduated from UNSW with a Master’s in Information Technology. 
@@ -127,6 +138,25 @@ export default function Home() {
           />
         </div>
       </section>
+
+      {/* 间隔 */}
+      <div className="h-[50px] bg-white"></div>
+
+      {/* Recently Post 标题 */}
+      <div className="flex justify-center">
+        <img 
+          src="/Title_RecentlyPost.jpg" 
+          alt="Recently Post" 
+          className="h-24 object-contain"
+        />
+      </div>
+
+      {/* Recently Post */}
+      <RecentlyPosts />
+
+      {/* 间隔 */}
+      <div className="h-[50px] bg-white"></div>
+
     </main>
   );
 }
