@@ -47,3 +47,16 @@
 .animate-marquee-soon {
   animation: marquee-soon 12s linear infinite;
 }
+
+@keyframes floatY {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-float {
+  animation: floatY 3s ease-in-out infinite;
+}

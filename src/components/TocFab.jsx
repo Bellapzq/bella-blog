@@ -106,19 +106,32 @@ export default function TocFab({
   return (
     <>
       {/* 悬浮按钮 */}
-      <button
-        ref={btnRef}
-        type="button"
-        aria-haspopup="dialog"
-        aria-expanded={open}
-        aria-controls="toc-fab-drawer"
-        onClick={() => setOpen((v) => !v)}
-        className={`fixed ${sideClass} z-50 rounded-full border bg-white/90 backdrop-blur px-4 py-2 shadow-md hover:bg-white
-                    focus:outline-none focus:ring-2 focus:ring-black/20`}
+      <div
+        className={`fixed ${sideClass} z-50 animate-float pointer-events-none`} 
         style={{ bottom }}
       >
-        {open ? "Close TOC" : "Open TOC"}
-      </button>
+        {/* 内层：真正的按钮（接收点击） */}
+        <button
+          ref={btnRef}
+          type="button"
+          aria-haspopup="dialog"
+          aria-expanded={open}
+          aria-controls="toc-fab-drawer"
+          onClick={() => setOpen((v) => !v)}
+          className={`pointer-events-auto rounded-full border bg-white/90 backdrop-blur px-4 py-2 shadow-md
+                      hover:bg-white focus:outline-none focus:ring-2 focus:ring-black/20 relative`}
+        >
+          {/* 🐻 小熊坐在按钮上沿（路径来自 public，所以用 /bear_resized.svg） */}
+          <img
+            src="/bear_resized.svg"
+            alt=""
+            aria-hidden="true"
+            className="pointer-events-none absolute -top-13 left-1/2 -translate-x-1/2 h-20 w-20"
+          />
+
+          {open ? "Close TOC" : "Open TOC"}
+        </button>
+      </div>
 
       {/* 背景遮罩 */}
       {open && (

@@ -322,13 +322,15 @@ export default function LijiangShangrila() {
           </div>
 
           {/* 图：右 1/2 */}
-          <figure className="order-1 md:order-2 rounded overflow-hidden">
+          <figure className="order-1 md:order-2 rounded overflow-hidden md:justify-self-end w-56 sm:w-64 md:w-72 lg:w-80">
             <img
               src="/Yunnan/MushroomHotpot.png"
               alt="Wild mushroom & chicken hotpot"
-              className="w-56 sm:w-64 md:w-72 lg:w-80 max-w-full h-auto rounded md:ml-auto"
+              className="w-full h-auto rounded"
             />
-            <figcaption className="mt-2 text-xs text-gray-500">Wild mushroom &amp; chicken hotpot</figcaption>
+            <figcaption className="mt-2 text-xs text-gray-500 md:text-right">
+              Wild mushroom &amp; chicken hotpot
+            </figcaption>
           </figure>
         </div>
 
@@ -366,8 +368,186 @@ export default function LijiangShangrila() {
         </div>
       </section>
 
+      {/* 间隔 */}
+      <div className="h-[50px] bg-white"></div>
+
+
+      {/* ===== Day 1 — Old Town Afternoon ===== */}
+      <section className="mt-16">
+        {/* Afternoon Stroll */}
+        <h3
+          id="afternoon-old-town"
+          className="text-2xl md:text-3xl font-bold leading-tight tracking-tight"
+          style={{ fontFamily: `"Merriweather", serif` }}
+        >
+          Afternoon Stroll in Lijiang Old Town
+        </h3>
+
+        <div className="mt-6 grid grid-cols-1 md:grid-cols-2 items-start gap-6 md:gap-x-12">
+          {/* 文左 */}
+          <div className="order-2 md:order-1 space-y-4 text-gray-800 leading-relaxed">
+            <p>
+              The architecture inside the Old Town is quite unique, reflecting Lijiang’s local style.
+              Many people say the Old Town feels overly commercialized, and I do agree to some extent.
+              Sometimes it feels like copy-paste shops everywhere—hundreds of bakeries selling rose cakes,
+              endless photo studios, and countless yak milk shops. But hey, at least it gives you a clear
+              direction of what to explore. 😅
+            </p>
+          </div>
+          {/* 图右 */}
+          <figure className="order-1 md:order-2 md:justify-self-end w-full md:w-[520px]">
+            <img
+              src="/Yunnan/AncientCity.png"
+              alt="Lijiang Old Town streets and architecture"
+              className="w-full h-auto rounded"
+            />
+            <figcaption className="mt-2 text-xs text-gray-500 md:text-right">
+              Lijiang Old Town
+            </figcaption>
+          </figure>
+        </div>
+
+        {/* To-Do List */}
+        <h3
+          id="old-town-todo"
+          className="mt-12 text-2xl md:text-3xl font-bold leading-tight tracking-tight"
+          style={{ fontFamily: `"Merriweather", serif` }}
+        >
+          To-Do List in Lijiang Old Town
+        </h3>
+
+        {/* 1. Rose cakes & ham pastries */}
+        <div className="mt-6 space-y-3 text-gray-800 leading-relaxed">
+          <h4 id="todo-1-rose-ham" className="font-semibold text-lg">
+            1. Try rose cakes &amp; ham pastries
+          </h4>
+          <p>
+            Yunnan’s warm, humid climate means roses bloom almost year-round, and the province is also
+            famous for its cured ham. Locals often combine the two—rose petals and ham—into pastries as part
+            of their daily snacks.
+          </p>
+          <p>
+            As for rose cakes, you’ll notice they’re literally everywhere in the Old Town. Walk just a few
+            meters and you’ll find another shop, most of which will happily offer free samples. You can try
+            rose cakes in all sorts of flavors—taro, matcha, sesame, and more.
+          </p>
+          <p>
+            After sampling quite a few, my favorite turned out to be <b>Jiahua Flower Cake (嘉华鲜花饼)</b>.
+            It’s a well-known chain with plenty of branches in the Old Town, so it’s super easy to find.
+            Their rose cakes are freshly baked, with a thin, crisp outer layer and a sweet, floral filling
+            made with Yunnan roses. The ham pastries were also a pleasant surprise—warm and savory, packed
+            with ham and sesame, balancing salty and sweet in one bite. 🌹🥮
+            <span className="block text-sm text-gray-600 mt-1">
+              (Pro tip: the two pastries I bought at Jiahua didn’t contain nuts, kernels, or raisins—peanut-allergy-friendly for me.)
+            </span>
+          </p>
+
+          {/* 三图平铺 */}
+          <div className="mt-3 grid grid-cols-2 sm:grid-cols-3 gap-3 md:max-w-3xl ml-auto">
+            <img src="/Yunnan/HamMooncake.jpg" alt="Ham pastry" className="w-full h-auto rounded" />
+            <img src="/Yunnan/FlowerPastry.jpg" alt="Rose flower pastry" className="w-full h-auto rounded hidden sm:block" />
+            <img src="/Yunnan/Jiahua.png" alt="Jiahua Flower Cake storefront" className="w-full h-auto rounded" />
+          </div>
+        </div>
+
+        {/* 间隔 */}
+        <div className="h-[20px] bg-white"></div>
+
+        {/* 2 + 3：左图右文 */}
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-12 items-start gap-6 md:gap-x-12">
+          <figure className="md:col-span-5">
+            {/* 如果你的文件名里有 &，建议改为 YakMilkTeaAndMooncake.png；否则也可保持原名 */}
+            <img
+              src="/Yunnan/YakMilkTea&Mooncake.png"
+              alt="Yak milk tea with pastries"
+              className="w-full h-auto rounded"
+            />
+            <figcaption className="mt-2 text-xs text-gray-500">
+              Yak milk tea, nougats and pastries
+            </figcaption>
+          </figure>
+
+          <div className="md:col-span-7 space-y-6 text-gray-800 leading-relaxed">
+            {/* 2. Yak Milk Tea */}
+            <div>
+              <h4 id="todo-2-yak-milk-tea" className="font-semibold text-lg">
+                2. Try Yak Milk Tea
+              </h4>
+              <p>
+                Yak milk tea is exactly what it sounds like—milk tea made with yak milk. 🐂🫖 You’ll find tons
+                of shops selling it in Lijiang Old Town. The tea options are endless: green tea, black tea,
+                floral teas, even Pu’er. You can choose with or without cream.
+              </p>
+              <p>
+                Sometimes it’s cream topped with sugar, nuts, or dried fruit—if you have allergies, be cautious.
+                I tried quite a few, and while the yak milk flavor itself wasn’t super strong, the taste was nice
+                and smooth—especially the rose tea version. 🌹
+              </p>
+            </div>
+
+            {/* 3. Yak Jerky & Cheese/Yogurt */}
+            <div>
+              <h4 id="todo-3-yak-jerky-cheese" className="font-semibold text-lg">
+                3. Taste Yak Jerky &amp; Yak Cheese
+              </h4>
+              <p>
+                There are lots of shops selling yak jerky and yak yogurt. The jerky here is different from the
+                usual beef jerky you might know—it’s often seasoned with chili, then stir-fried with sesame, so
+                the flavors are bold and fragrant. Yak yogurt is tangier than regular yogurt, almost like a cross
+                between yogurt and sour cream.
+              </p>
+              <p className="text-sm text-gray-700">
+                💡 <b>Tip:</b> Many shops offer free samples, so definitely try before you buy. But keep an eye on prices—some
+                shops sell by weight (per 50g or per 100g), and it can get expensive if you don’t notice.
+              </p>
+            </div>
+             {/* 4. Nougat */}
+            <div className="mt-8 text-gray-800 leading-relaxed">
+              <h4 id="todo-4-nougat" className="font-semibold text-lg">4. Try The Local Nougat</h4>
+              <p>
+                Another specialty you’ll see everywhere is nougat. 🍬 Just be careful if you have nut allergies,
+                as some of them sneak in mysterious nuts. I skipped this one for safety reasons.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* 5. Traditional Costumes */}
+        <div className="mt-8 text-gray-800 leading-relaxed">
+          <h4 id="todo-5-costumes" className="font-semibold text-lg">5. Dress Up in Traditional Costumes</h4>
+          <p>
+            You’ll also notice lots of people walking around in beautiful outfits—these are traditional costumes
+            from different Chinese ethnic minorities. Many visitors rent them for the day, complete with makeup
+            and hair styling.
+          </p>
+          <p className="text-sm text-gray-700">
+            💡 Prices are usually charged per day, starting around <b>60–100 RMB</b>. Shops are very experienced and will guide
+            you on poses for photos. If you want a full photoshoot package, expect <b>200–300 RMB</b>. It’s a fun way to get some
+            unique photos—do your own base makeup first, then let the shop help with hairstyling and accessories. 👘✨
+          </p>
+        </div>
+
+        {/* 6. Rushan + 图下放 */}
+        <div className="mt-8 text-gray-800 leading-relaxed">
+          <h4 id="todo-6-rushan" className="font-semibold text-lg">
+            6. Taste Baked Yogurt Fans (乳扇, Rushan)
+          </h4>
+          <p>
+            This is one of Yunnan’s unique snacks. It’s basically strips of cow’s milk curd, grilled over charcoal
+            until golden, then brushed with rose jam and sprinkled with sugar. When hot, it’s chewy; once it cools,
+            it becomes crisp.
+          </p>
+          <p className="text-sm text-gray-700">⚠️ The syrup tends to drip—watch out when you bite in!</p>
+
+          <figure className="mt-3 md:max-w-lg">
+            <img src="/Yunnan/RostMilk.png" alt="Rushan (baked yogurt fans)" className="w-full h-auto rounded" />
+            <figcaption className="mt-2 text-xs text-gray-500">Rushan (baked yogurt fans)</figcaption>
+          </figure>
+        </div>
+      </section>
+
       {/* ===== 悬浮 TOC：自动扫描 h2/h3（带 id）生成 ===== */}
-      <TocFab title="ON THIS PAGE" side="left" bottom={16} />
+      <TocFab bottom={120} />
       {/*
         如果你更喜欢手动传目录项，而不是自动扫描：
         <TocFab
